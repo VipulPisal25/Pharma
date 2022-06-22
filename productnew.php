@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
   <title>Pharma &mdash; Colorlib Template</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,6 +23,7 @@
  
   <style>
 table {
+  text-align: center;
     border-collapse: collapse;
     width:50%;
 }
@@ -144,7 +146,7 @@ font-family: 'Numans', sans-serif;
 <?php
 
 error_reporting(E_PARSE | E_ERROR);
-$conn=mysqli_connect('localhost','root','','majorpharma');
+$conn=mysqli_connect("database-1.cuhp9ojmpf3d.ap-south-1.rds.amazonaws.com","admin","adminadmin","majorpharma");
 $q="select * from add_product";
 $result=mysqli_query($conn,$q);
 $num="$result->num_rows";

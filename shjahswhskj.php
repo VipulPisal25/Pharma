@@ -128,7 +128,7 @@ font-weight: bolder;
 </div>
 <form action=" " method="POST">
 <?php
-$conn=mysqli_connect("localhost","root","","pharmacy2");	//make a connection
+$conn=mysqli_connect("database-1.cuhp9ojmpf3d.ap-south-1.rds.amazonaws.com","admin","adminadmin","majorpharma");	//make a connection
 $id=$_GET['id'];
 $query= "select * from addproduct where id='$id'";		//select query
 $result=mysqli_query($conn,$query);
@@ -157,7 +157,7 @@ Quantity:<input type="number" name="quantity"  value=" <?php echo $qty;?>"><br><
 Description:<textarea name="description" cols="5" rows="5"value=" <?php echo $descript;?>" > <?php echo $descript;?></textarea><br><br>
 <input type="submit" name="update" value="update">
 <?php
-$conn=mysqli_connect("localhost","root","","pharmacy2");
+$conn=mysqli_connect("database-1.cuhp9ojmpf3d.ap-south-1.rds.amazonaws.com","admin","adminadmin","majorpharma");
 $id1=$_GET['id'];
 if(isset($_POST['update']))
 {

@@ -3,7 +3,7 @@
     if(!isset($_SESSION['email'])){
         header('location:index.php');
     }  
-	$conn=mysqli_connect("localhost","root","","majorpharma");
+	$conn=mysqli_connect("database-1.cuhp9ojmpf3d.ap-south-1.rds.amazonaws.com","admin","adminadmin","majorpharma");
     $old_password= md5(md5(mysqli_real_escape_string($con,$_POST['oldPassword'])));
     $new_password= md5(md5(mysqli_real_escape_string($con,$_POST['newPassword'])));
     $email=$_SESSION['email'];

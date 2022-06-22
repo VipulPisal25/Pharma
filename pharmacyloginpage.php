@@ -2,7 +2,7 @@
 <?php
 session_start();
 
-$conn=mysqli_connect("localhost","root","","majorpharma");	//make a connection
+$conn=mysqli_connect("database-1.cuhp9ojmpf3d.ap-south-1.rds.amazonaws.com","admin","adminadmin","majorpharma");	//make a connection
 if(isset($_POST['insert']))
 {
 $user=$_POST['username'];

@@ -1,6 +1,6 @@
 <?php
 session_start();
-$conn=mysqli_connect("localhost","root","","majorpharma");
+$conn=mysqli_connect("database-1.cuhp9ojmpf3d.ap-south-1.rds.amazonaws.com","admin","adminadmin","majorpharma");
 
 if(isset($_POST['insert']))
 {

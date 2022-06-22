@@ -3,7 +3,7 @@
 session_start();
 include 'custdashboardh.php';
 error_reporting(E_PARSE | E_ERROR);
-$conn=mysqli_connect('localhost','root','','majorpharma');
+$conn=mysqli_connect("database-1.cuhp9ojmpf3d.ap-south-1.rds.amazonaws.com","admin","adminadmin","majorpharma");
 
 $status="";
 if (isset($_POST['action']) && $_POST['action']=="remove"){

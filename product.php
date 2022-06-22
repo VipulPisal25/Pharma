@@ -3,7 +3,7 @@
 		
 		$res=mysqli_query($conn,"select * from add_product");
 		while($row=mysqli_fetch_array($res))
-		{
+		
 		?>
 		<div class="container">
 		
@@ -92,7 +92,7 @@ font-family: 'Numans', sans-serif;
 <?php
 
 error_reporting(E_PARSE | E_ERROR);
-$conn=mysqli_connect('localhost','root','','majorpharma');
+$conn=mysqli_connect("database-1.cuhp9ojmpf3d.ap-south-1.rds.amazonaws.com","admin","adminadmin","majorpharma");
 $q="select * from add_product";
 $result=mysqli_query($conn,$q);
 $num="$result->num_rows";

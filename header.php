@@ -4,7 +4,7 @@
 
 	//if(!isset($_SESSION['username']) AND $_SESSION['member_id'] == ''){
 		//header('location:login.php');
-	}
+	//}
 ?>
 
 <!doctype html>

@@ -3,18 +3,18 @@
 session_start();
 include 'custdashboardh.php';
 error_reporting(E_PARSE | E_ERROR);
-$conn=mysqli_connect('localhost','root','','majorpharma');
+$conn=mysqli_connect("database-1.cuhp9ojmpf3d.ap-south-1.rds.amazonaws.com","admin","adminadmin","majorpharma");
 
 
 $status="";
 if (isset($_POST['code']) && $_POST['code']!=""){
 $code=$_POST['code'];
 echo "name in post=".$code;
-$result = mysqli_query($conn,"select * from add_product where categary='w'");
+$result = mysqli_query($conn,"select * from add_product where categary='vitamins'");
 if(mysqli_query($conn,"select * from add_product where name='$categary'"))
 {echo "  ;;;;;;;;connect";}
 else{ echo "not connect";}
-echo "select * from add_product where categary='w'";
+echo "select * from add_product where categary=''vitamins";
 $row = mysqli_fetch_assoc($result);
 //$name = $row['name'];
 $code = $row['name'];
@@ -77,7 +77,7 @@ $cart_count = count(array_keys($_SESSION["shopping_cart1"]));
 <?php
   
 }
-		$res=mysqli_query($conn,"select * from add_product where categary='w'");
+		$res=mysqli_query($conn,"select * from add_product where categary=''vitamins");
 		while($row=mysqli_fetch_array($res))
 		{
 		?>

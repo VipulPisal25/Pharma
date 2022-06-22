@@ -22,6 +22,7 @@
  
   <style>
 table {
+align: center;
     border-collapse: collapse;
     width:50%;
 }
@@ -140,7 +141,7 @@ font-family: 'Numans', sans-serif;
 <?php
 
 error_reporting(E_PARSE | E_ERROR);
-$conn=mysqli_connect('localhost','root','','majorpharma');
+$conn=mysqli_connect("database-1.cuhp9ojmpf3d.ap-south-1.rds.amazonaws.com","admin","adminadmin","majorpharma");
 $q="select * from registration";
 $result=mysqli_query($conn,$q);
 $num="$result->num_rows";
@@ -280,7 +281,7 @@ if($result->num_rows > 0)
             <div class="block-5 mb-5">
               <h3 class="footer-heading mb-4">Contact Info</h3>
               <ul class="list-unstyled">
-                <li class="address">Government Polytechnic Ahmednager, Maharashtra</li>
+                <li class="address">Vishwakarma Institute Of Technology, Maharashtra</li>
                 <li class="phone"><a href="tel://23923929210">+91 6543653478</a></li>
                 <li class="email">tycogp@gmail.com</li>
               </ul>

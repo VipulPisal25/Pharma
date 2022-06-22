@@ -1,3 +1,3 @@
 <?php
-	$connection = new mysqli('localhost', 'root','','majorpharma');
+	$connection = new mysqli("database-1.cuhp9ojmpf3d.ap-south-1.rds.amazonaws.com","admin","adminadmin","majorpharma");
 ?>

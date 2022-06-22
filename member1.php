@@ -141,7 +141,7 @@ font-family: 'Numans', sans-serif;
 <?php
 
 error_reporting(E_PARSE | E_ERROR);
-$conn=mysqli_connect('localhost','root','','majorpharma');
+$conn=mysqli_connect("database-1.cuhp9ojmpf3d.ap-south-1.rds.amazonaws.com","admin","adminadmin","majorpharma");
 $q="select * from registration";
 $result=mysqli_query($conn,$q);
 $num="$result->num_rows";

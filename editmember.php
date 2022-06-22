@@ -1,6 +1,6 @@
 <?php
 error_reporting(E_PARSE | E_ERROR);
-$conn=mysqli_connect("localhost","root","","majorpharma");
+$conn=mysqli_connect("database-1.cuhp9ojmpf3d.ap-south-1.rds.amazonaws.com","admin","adminadmin","majorpharma");
 $sql = "select * from add_product";
 $result=mysqli_query($conn,$sql);
 $r=mysqli_fetch_array($result);
